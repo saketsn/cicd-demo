@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello from CI/CD Pipeline!');
+  res.send('Hello from CI/CD Pipeline! - Automated Deploy v2');
 });
 
 // Only start the server if this file is run directly
