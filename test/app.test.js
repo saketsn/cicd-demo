@@ -9,10 +9,10 @@ describe('GET /', () => {
       .expect(200, done);
   });
 
-  it('should return correct message', (done) => {
-    request(app)
-      .get('/')
-      .expect('Hello from CI/CD Pipeline!', done);
-  });
+ it('should return correct message', (done) => {
+  request(app)
+    .get('/')
+    .expect('Hello from CI/CD Pipeline! - Automated Deploy v2', done);
+});
 
 });
