@@ -1,15 +1,15 @@
 {
   "name": "cicd-demo",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "mocha test/*.test.js --timeout 5000"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.x.x"
+  },
+  "devDependencies": {
+    "mocha": "^x.x.x",
+    "supertest": "^x.x.x"
   }
 }
